@@ -1,13 +1,13 @@
 package Spells;
 
-public class LightningBolt extends Spell{
+public class LightningBolt extends Spell implements IAmASpell{
 
     private int spellDmg;
     private int spellCost;
 
     public LightningBolt(String name) {
         super(name);
-        this.spellDmg = 40;
+        this.spellDmg = 15;
         this.spellCost = 10;
     }
 

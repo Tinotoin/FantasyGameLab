@@ -19,7 +19,7 @@ public class LightningBoltTest {
     @Test
     public void testValues(){
         assertEquals("LightningBolt", lightningBolt.getName());
-        assertEquals(40, lightningBolt.getSpellDmg());
+        assertEquals(15, lightningBolt.getSpellDmg());
         assertEquals(10, lightningBolt.getSpellCost());
     }
 }

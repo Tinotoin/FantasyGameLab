@@ -1,9 +1,9 @@
-package Creatures;
+package Pets;
 
 import Players.IAttack;
 import Players.ITakeDamage;
 
-public class Blob extends Creature implements ITakeDamage, IAttack {
+public class Blob extends Pet implements ITakeDamage, IAttack {
 
     private int dmg;
     private int hp;

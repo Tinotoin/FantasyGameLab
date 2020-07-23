@@ -1,6 +1,6 @@
 package Spells;
 
-public class Fireball extends Spell{
+public class Fireball extends Spell implements IAmASpell{
 
         private int spellDmg;
         private int spellCost;

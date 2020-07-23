@@ -1,10 +1,10 @@
-package Creatures;
+package Enemies;
 
-public abstract class Creature{
+public abstract class Enemy {
 
     private String name;
 
-    public Creature(String name) {
+    public Enemy(String name) {
         this.name = name;
     }
 

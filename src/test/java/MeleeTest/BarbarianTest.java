@@ -1,11 +1,9 @@
-package PlayerTest;
+package MeleeTest;
 
-import Creatures.Blob;
-import Creatures.Ogre;
+import Pets.Ogre;
 import Players.Melee.Barbarian;
 import Weapons.Axe;
 import Weapons.IAmAWeapon;
-import Weapons.Axe;
 import org.junit.Before;
 import org.junit.Test;
 

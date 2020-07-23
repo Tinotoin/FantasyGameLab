@@ -1,6 +1,6 @@
-package PlayerTest;
+package MeleeTest;
 
-import Creatures.Blob;
+import Pets.Blob;
 import Players.Melee.Dwarf;
 import Weapons.Axe;
 import Weapons.IAmAWeapon;

@@ -1,6 +1,6 @@
 package Spells;
 
-public class HealingRain extends Spell{
+public class HealingRain extends Spell implements IAmASpell{
 
     private int spellDmg;
     private int spellCost;

@@ -1,17 +1,19 @@
-package Creatures;
+package Enemies;
 
 import Players.IAttack;
 import Players.ITakeDamage;
 
-public class Ogre extends Creature implements ITakeDamage, IAttack {
+public class Ghost extends Enemy implements ITakeDamage, IAttack {
+
 
     private int dmg;
     private int hp;
 
-    public Ogre(String name) {
+    public Ghost(String name){
         super(name);
-        this.dmg = 10;
-        this.hp = 50;
+        this.dmg = 2;
+        this.hp = 10;
+
     }
 
     public int getDmg() {
@@ -28,11 +30,11 @@ public class Ogre extends Creature implements ITakeDamage, IAttack {
 
     public String takeDamage(int damage){
         hp = hp - damage;
-        return "Ah ya bastard!";
+        return "Wooooooo!";
     }
 
     public String attack(ITakeDamage target){
         target.takeDamage(dmg);
-        return "Take that ya bawbag!";
+        return "[clanking chains]";
     }
 }

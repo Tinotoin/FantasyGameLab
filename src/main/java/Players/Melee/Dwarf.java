@@ -1,5 +1,5 @@
 package Players.Melee;
-
+import java.lang.Math;
 import Players.IAttack;
 import Players.ITakeDamage;
 import Weapons.IAmAWeapon;
@@ -19,8 +19,17 @@ public class Dwarf extends Melee implements IAttack {
     }
 
     public String attack(ITakeDamage target) {
-        target.takeDamage(getWeapon().getDmg() * this.attackSpeed);
-        return "Take this ya dobber";
+        double rand = Math.random();
+        if (rand <= 0.1) {
+            return "You missed, dobber";
+        } else if (rand >= 0.9) {
+            target.takeDamage(getWeapon().getDmg() * this.attackSpeed * 2);
+            return "Eat my critical you git";
+        } else {
+            target.takeDamage(getWeapon().getDmg() * this.attackSpeed);
+            return "Eat my attack you bastard";
+        }
+
     }
 
 

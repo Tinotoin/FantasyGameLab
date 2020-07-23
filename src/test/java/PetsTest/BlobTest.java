@@ -1,6 +1,6 @@
-package CreaturesTest;
+package PetsTest;
 
-import Creatures.Blob;
+import Pets.Blob;
 import org.junit.Before;
 import org.junit.Test;
 
