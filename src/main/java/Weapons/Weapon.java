@@ -14,5 +14,4 @@ public abstract class Weapon {
         return name;
     }
 
-
 }

@@ -1,6 +1,6 @@
 package Weapons;
 
-public class Sword extends Weapon{
+public class Sword extends Weapon implements IAmAWeapon{
 
     private int dmg;
     private int weight;

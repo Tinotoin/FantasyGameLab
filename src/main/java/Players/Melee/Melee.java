@@ -1,19 +1,23 @@
 package Players.Melee;
 
 import Players.Player;
+import Weapons.IAmAWeapon;
 import Weapons.Weapon;
 
 public abstract class Melee extends Player {
 
-    private Weapon weapon;
+    private IAmAWeapon weapon;
 
-    public Melee(String name, Weapon weapon) {
+    public Melee(String name, IAmAWeapon weapon) {
         super(name);
         this.weapon = weapon;
     }
 
-    public Weapon getWeapon() {
+    public IAmAWeapon getWeapon() {
         return weapon;
     }
 
+    public void changeWeapon(IAmAWeapon weapon) {
+        this.weapon = weapon;
+    }
 }

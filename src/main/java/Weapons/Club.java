@@ -1,6 +1,6 @@
 package Weapons;
 
-public class Club extends Weapon{
+public class Club extends Weapon implements IAmAWeapon{
 
     private int dmg;
     private int weight;

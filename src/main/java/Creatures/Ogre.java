@@ -11,7 +11,7 @@ public class Ogre extends Creature implements ITakeDamage, IAttack {
     public Ogre(String name) {
         super(name);
         this.dmg = 10;
-        this.hp = 30;
+        this.hp = 50;
     }
 
     public int getDmg() {
